@@ -1,0 +1,11 @@
+name: LockedItems
+version: ${project.version}
+main: com.github.beastyboo.lockeditems.LockedItems
+api-version: 1.16
+authors: [ BeastyBoo ]
+description: A github repo for educational purposes
+commands:
+  lockitem:
+    description: Locking items.
+permissions:
+  dropstop.use:
