@@ -18,11 +18,11 @@ public class DropListener implements Listener {
     public void onDrop(PlayerDropItemEvent event) {
         Player player = event.getPlayer();
 
-        if(!core.getCache().containsKey(player.getUniqueId())) {
+        if(!core.getDropManager().getCache().containsKey(player.getUniqueId())) {
             return;
         }
 
-        ItemsManager manager = core.getCache().get(player.getUniqueId());
+        ItemsManager manager = core.getDropManager().getCache().get(player.getUniqueId());
         Material hand = event.getItemDrop().getItemStack().getType();
 
         if(manager.getItems().contains(hand)) {
